@@ -10,8 +10,11 @@ export class RecipeListComponent implements OnInit {
   // Temp code for emitting selected recipe
   @Output('recipeSelected') recipeSelected: EventEmitter<Recipe> = new EventEmitter<Recipe>();
 
-  recipes: Recipe[] = [];
-  recipe: Recipe = new Recipe('A dummy recipe', 'Dummy recipe description', 'http://lorempixel.com/200/200');
+  recipes: Recipe[] = [
+      new Recipe('Cheese cake', 'A tasty cheese cake', 'http://lorempixel.com/200/200', []),
+      new Recipe('Chocolate cake', 'A tasty chocolate cake', 'http://lorempixel.com/200/200', []),
+      new Recipe('Cherry cake', 'A tasty cherry cake', 'http://lorempixel.com/200/200', [])
+  ];
 
   constructor() { }
 
