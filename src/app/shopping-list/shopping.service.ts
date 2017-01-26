@@ -4,7 +4,7 @@ import {Ingredient} from "../ingredient";
 @Injectable()
 export class ShoppingService {
 
-  private items: Ingredient[];
+  private items: Ingredient[] = [];
 
   constructor() { }
 
