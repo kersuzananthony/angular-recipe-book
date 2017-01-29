@@ -2,6 +2,9 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
+## Backend configuration
+If you want to interact with a backend, please create a Firebase account and add a new application. Copy and paste your application URL into recipe.service.ts file.
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
