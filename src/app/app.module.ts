@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
-import {ShoppingListModule} from "./shopping-list/shopping-list.module";
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { DropdownDirective } from './dropdown.directive';
@@ -23,8 +21,7 @@ import { HomeComponent } from './home.component';
   imports: [
     BrowserModule,
     HttpModule,
-    routing,
-    ShoppingListModule
+    routing
   ],
   providers: [RecipeService, ShoppingService],
   bootstrap: [AppComponent]
